@@ -1,0 +1,33 @@
+import java.util.Scanner;
+
+public class FloorCeil {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+
+        if (b == 0) {
+            System.out.println("Division by zero not allowed");
+            return;
+        }
+
+        int q = a / b;
+
+        int floor = q;
+        int ceil = q;
+
+        // Floor adjustment
+        if ((a ^ b) < 0 && a % b != 0) {
+            floor--;
+        }
+
+        // Ceil adjustment
+        if ((a ^ b) > 0 && a % b != 0) {
+            ceil++;
+        }
+
+        System.out.println("Floor: " + floor);
+        System.out.println("Ceil : " + ceil);
+    }
+}
