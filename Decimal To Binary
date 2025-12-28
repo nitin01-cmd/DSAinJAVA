@@ -1,0 +1,11 @@
+class GfG {
+
+    static String decToBinary(int n) {
+        return Integer.toBinaryString(n);
+    }
+
+    public static void main(String[] args) {
+        int n = 12;
+        System.out.println(decToBinary(n));
+    }
+}
