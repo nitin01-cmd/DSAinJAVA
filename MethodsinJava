@@ -1,0 +1,10 @@
+public class Greet{
+    public void wishGood(){
+        System.out.println("Good Morning Nitin");
+    }
+    public static void main(String[] args){
+         obj = new Greet();
+        obj.wishGood();
+        
+    }
+}
